@@ -1,18 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="match.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the Match Game</h1>
-    <div class="gameGrid"></div>
+  <h1>Matching Game</h1>
+  <div class="memory-game">
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="img/apple.png" alt="Aurelia" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="img/apple.png" alt="Aurelia" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
 
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="img/banana.png" alt="Vue" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="img/banana.png" alt="Vue" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
 
-    <p>Clicks: <span id="clicks"></span></p>
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="img/grape.png" alt="Angular" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="img/grape.png" alt="Angular" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="img/kiwi.png" alt="Ember" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="img/kiwi.png" alt="Ember" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="img/mango.png" alt="Backbone" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="img/mango.png" alt="Backbone" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="img/orange.png" alt="React" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="img/orange.png" alt="React" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="pear">
+      <img class="front-face" src="img/pear.png" alt="React" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="pear">
+      <img class="front-face" src="img/pear.png" alt="React" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="strawberry">
+      <img class="front-face" src="img/strawberry.png" alt="React" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="strawberry">
+      <img class="front-face" src="img/strawberry.png" alt="React" />
+      <img class="back-face" src="/img/back.png" alt="JS Badge" />
+    </div>
+  </div>
+  <br>
+  <p>Click: <span id="click"></span></p>
+  <button onclick="reset();">Reset</button>
+  <script src="scripts.js"></script>
 </body>
 </html>
